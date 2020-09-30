@@ -33,13 +33,13 @@ const dateFormat = require('dateformat');
 
 client.on("guildCreate", (guild) => {
        let channel = client.channels.get(guild.channels.filter(c => c.permissionsFor(client.user).has("SEND_MESSAGES") && c.type === "text").map(r => r.id)[0])    
-       channel.send(`**قنــاتنا علـى اليوتيوب https://www.youtube.com/channel/UCP6BTyTx2yoxcYcNpYcUZjA**`)
+       channel.send(`**By iw9ky**`)
 });
 
 
 
 
-///bot حاله
+///bot idle
 
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -54,8 +54,8 @@ client.on('message', message => {
       message.channel.send(` ☑ Client Activity Now Is : \`Listening ${argresult} \` `)
   } else 
   if (message.content.startsWith(prefix + 'setstream')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/idk");
-     message.channel.send(` ☑ Client Activity Now Is : \`Streaming ${argresult} \` `)
+    client.user.setGame(argresult, "EAX Settings");
+     message.channel.send(` ☑ Client Activity Now Is : \`Game ${argresult} \` `)
   }
 
   });
@@ -63,80 +63,80 @@ client.on('message', message => {
 
 
 
-const prefix = "البرفكس هنا"
-const developers = "الايدي بتاعك هنا"
+const prefix = ""
+const developers = "727046138602979339"
 
 
 
 ///كود الهيلب
 
       client.on("message", message => {
-    if (message.content.toLowerCase() === prefix + "help") {
+    if (message.content.toLowerCase() === prefix + "مساعده") {
         message.delete(5000)
         if(!message.channel.guild) return;
         const e = new Discord.RichEmbed()
         .setColor('#36393e')
-        .setTitle('تــم أرسال فـي الخــاص')
+        .setTitle('طرشت لك في الخاص ')
      const embed = new Discord.RichEmbed()
          .setColor('#36393e')
-         .setTitle('ســيرفرنا حيــاك الله')
-         .setURL('https://discord.gg/k6updNC')
+         .setTitle(Welcome To Server')
+         .setURL('By iw9ky')
          .setDescription(`
          \`\`\`Main Commands  :\`\`\`         
          
-         - ${prefix}bot : لاظهار معلومات البوت
+         - {prefix}معلومات البوت : لاظهار معلومات البوت
          
-         - ${prefix}avatar : لاظهار صورتك
+         - {prefix}افتار : لاظهار صورتك
 		 
-         - ${prefix}savatar : لاظهار صوره السيرفر
+         - {prefix}افتار السيرفر : لاظهار صوره السيرفر
          
-         - ${prefix}allbots : لاظهار جميع البوتات في السيرفر
+         - {prefix}كل البوتات : لاظهار جميع البوتات في السيرفر
          
-         - ${prefix}user : لاظهار معلومات حسابك
+         - {prefix}حسابي : لاظهار معلومات حسابك
          
-         - ${prefix}server : لاظهار معلومات السيرفر
+         - {prefix}سيرفر : لاظهار معلومات السيرفر
 
-         - ${prefix}ping : لمعرفه سرعه اتصال البوت
+         - {prefix}بنق : لمعرفه سرعه اتصال البوت
 
-         - ${prefix}roles : لاظهار جميع رولات السيرفر
+         - {prefix}كل الرولات : لاظهار جميع رولات السيرفر
 
          \`\`\`Admin Commands :\`\`\` 
          
          \`Text Commands : \`
          
-         - ${prefix}ban : لتبنيد شخص
+         - {prefix}باند : لتبنيد شخص
          
-         - ${prefix}kick : لطرد شخص
+         - {prefix}طرد : لطرد شخص
          
-         - ${prefix}bc : برودكاست رساله الى أعضاء السيرفر
+         - {prefix}KT : برودكاست رساله الى أعضاء السيرفر
          
-         - ${prefix}mute : أسكات
+         - {prefix}اسكت : أسكات
          
-         - ${prefix}unmute : تكلم
+         - {prefix}uتكلم : تكلم
          
-         - ${prefix}lock : قفل الشات
+         - {prefix}قفل الشات : قفل شات
          
-         - ${prefix}unlock : لفتح الشات
+         - {prefix}فتح الشات : لفتح الشات
 
-         - ${prefix}hide : لاخفاء الشات
+         - {prefix}خفاء الشات :اخفاء الشات
          
-         - ${prefix}show : لاظهار الشات
+         - {prefix}ظهار الشات : لاظهار الشات
          
-         - ${prefix}role : اعظاء رتبه لشخص
+         - {prefix}role : اعظاء رتبه لشخص
          
-         - ${prefix}role all : اعطاء رتبه للكل
+         - {prefix}role all : اعطاء رتبه للكل
          
-         - ${prefix}role humans : اعطاء رتبه لشخص
+         - {prefix}role humans : اعطاء رتبه لشخص
          
-         - ${prefix}role bots : اعطاء رتبه لبوت
+         - {prefix}role bots : اعطاء رتبه لبوت
          
-         - ${prefix}say : البوت يكرر كلامك
+         - {prefix}say : البوت يكرر كلامك
          
-         - ${prefix}embed : كلام بامبد جميل
+         - {prefix}embed : كلام بامبد جميل
          
          \`Voice Commands : \`
          
-        - ${prefix}Move all : سحب الجميع الى رومك الصوتي
+        - {prefix}سحب الكل : سحب الجميع الى رومك الصوتي
 
          \`\`\`Credits Commands  :\`\`\`  
 
@@ -150,8 +150,7 @@ const developers = "الايدي بتاعك هنا"
 
 
 
-**رابط شرح كيفيه عمل البوت على قناتي في اليوتيوب**
-https://youtu.be/_ikLmvEU5rE
+**By iw9ky**
 
          
 `)
@@ -166,7 +165,7 @@ https://youtu.be/_ikLmvEU5rE
 
 ///ping
 client.on('message', message => {   
-  if (message.content === prefix + "ping") {
+  if (message.content === prefix + "بنق") {
    const embed = new Discord.RichEmbed()
 
 .setColor("RANDOM")
@@ -181,7 +180,7 @@ message.channel.sendEmbed(embed);
 client.on("message",message => {
   if(message.author.bot) return;
   if(!message.content.startsWith(prefix)) return;
-    if(message.content.startsWith(prefix + "avatar")){
+    if(message.content.startsWith(prefix) + "افتار السيرفر"){
   const mention = message.mentions.users.first()
   
   if(!mention) return console.log("") 
@@ -235,13 +234,13 @@ client.on('message', message => {
      .setThumbnail(client.user.avatarURL)
      .setColor('RANDOM')
      .setTitle('``Info The Bot`` ')
-     .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
-     .addField('``servers``', [client.guilds.size], true)
-     .addField('``channels``' , `[ ${client.channels.size} ]` , true)
+     .addField('``بنقي``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
+     .addField('``سيرفرات``', [client.guilds.size], true)
+     .addField('``الرومات``' , `[ ${client.channels.size} ]` , true)
      .addField('``Users``' ,`[ ${client.users.size} ]` , true)
-     .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
-     .addField('``My ID``' , `[ ${client.user.id} ]` , true)
-           .addField('``My Prefix``' , `[ $ ]` , true)
+     .addField('``اسمي``' , `[ ${client.user.tag} ]` , true)
+     .addField('``ايدي``' , `[ ${client.user.id} ]` , true)
+           .addField('``My Prefix``' , `[  ]` , true)
            .addField('``My Language``' , `[ JavaScript ]` , true)
            .addField('``Bot Version``' , `[ v0.1 ]` , true)
            .setFooter('By | <@Your Id>')
@@ -293,11 +292,11 @@ client.on("message", pixelbot => {
         .setColor("#00000")
         .setTitle(" :beginner: :heartpulse:   | User Info") 
         .setAuthor(pixelbot.author.username, pixelbot.author.avatarURL)
-        .addField("**✽ Name :**   ", pixelbot.author.username, true)
-        .addField("**✽ Tag :**   ", pixelbot.author.discriminator, true)
-        .addField("**✽ ID :** ", pixelbot.author.id, true) 
+        .addField("**✽ اسمه :**   ", pixelbot.author.username, true)
+        .addField("**✽ تاقه :**   ", pixelbot.author.discriminator, true)
+        .addField("**✽ ايديه :** ", pixelbot.author.id, true) 
         .addField(
-          "**✽ Joined At :**   ",
+          "**✽ دخل السيرفر :**   ",
           moment(pixelbot.joinedAt).format("D/M/YYYY h:mm a "),
           true
         )
@@ -333,7 +332,7 @@ ${alpha.join('n')}
 ///roles
 
 client.on('message', message => {
-  if (message.content.startsWith(prefix + 'roles')) {
+  if (message.content.startsWith(prefix + 'رولات')) {
 
       const Rank = message.guild.roles.map(e => e.toString()).join(" ");
 
@@ -360,7 +359,7 @@ client.on("message", message => {
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "kick") {
+  if (command == "طرد") {
     if (message.author.bot) return;
     if (!message.channel.guild)
       return message.reply("** This command only for servers**");
@@ -392,9 +391,9 @@ client.on("message", message => {
       .setAuthor(`KICKED!`, user.displayAvatarURL)
       .setColor("RANDOM")
       .setTimestamp()
-      .addField("**User:**", "**[ " + `${user.tag}` + " ]**")
-      .addField("**By:**", "**[ " + `${message.author.tag}` + " ]**")
-      .addField("**Reason:**", "**[ " + `${reason}` + " ]**");
+      .addField("**حسابه:**", "**[ " + `${user.tag}` + " ]**")
+      .addField("**من قبل من:**", "**[ " + `${message.author.tag}` + " ]**")
+      .addField("**السبب:**", "**[ " + `${reason}` + " ]**");
     message.channel.send({
       embed: kickembed
     });
@@ -412,7 +411,7 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "ban") {
+  if (command == "باند") {
                if(!message.channel.guild) return message.reply('** This command only for servers**');
          
   if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.reply("**انت لا تملك الصلاحيات المطلوبه**");
@@ -433,7 +432,7 @@ message.channel.send(`**:white_check_mark: ${user.tag} banned from the server ! 
 
 ///show hide
 client.on('message', message => {
-        if(message.content === prefix + "hide") {
+        if(message.content === prefix + "اخفاءالشات") {
         if(!message.channel.guild) return;
         if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('You Dont Have Perms :x:');
                message.channel.overwritePermissions(message.guild.id, {
@@ -445,7 +444,7 @@ client.on('message', message => {
   
   
   client.on('message', message => {
-        if(message.content === prefix + "show") {
+        if(message.content === prefix + "اظهار الشات") {
         if(!message.channel.guild) return;
         if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(':x:');
                message.channel.overwritePermissions(message.guild.id, {
@@ -493,7 +492,7 @@ client.on("message", message => {
 
   let command = message.content.split(" ")[0];
 
-  if (command === prefix + "mute") {
+  if (command === prefix + "اسكت") {
     if (message.author.bot) return;
     if (!message.member.hasPermission("MANAGE_ROLES"))
       return message
@@ -562,7 +561,7 @@ client.on("message", message => {
   
    let command = message.content.split(" ")[0];
   
-   if (message.content.split(" ")[0].toLowerCase() === prefix + "unmute") {
+   if (message.content.split(" ")[0].toLowerCase() === prefix + "تكلم") {
          if (!message.member.hasPermission('MANAGE_ROLES')) return;
    let user = message.mentions.users.first();
    let modlog = client.channels.find('name', 'log');
@@ -593,7 +592,7 @@ client.on("message", function(message) {
 
   var args = message.content.substring(prefix.length).split(" ");
   switch (args[0].toLocaleLowerCase()) {
-    case "clear":
+    case "مسح":
       message.delete();
       if (!message.channel.guild) return;
       if (message.member.hasPermission(0x2000)) {
@@ -610,7 +609,7 @@ client.on("message", function(message) {
                   ": عدد الرسائل التي تم مسحها" +
                   "```**"
               )
-              .then(m => m.delete(5000));
+              .then(m => m.delete(999999));
           });
         } else {
           let messagecount = parseInt(args[1]);
@@ -626,8 +625,8 @@ client.on("message", function(message) {
                 ": عدد الرسائل التي تم مسحها" +
                 "```**"
             )
-            .then(m => m.delete(5000));
-          message.delete(60000);
+            .then(m => m.delete(99999));
+          message.delete(99999);
         }
       } else {
         var manage = new Discord.RichEmbed()
@@ -739,7 +738,7 @@ if( msg.toLowerCase().startsWith( prefix + 'roleembed' ) ){
 // ------------ = [Voice Commands] = ------------
 
  client.on('message', message => {
- if (message.content.toLowerCase() === prefix + "move all") {
+ if (message.content.toLowerCase() === prefix + "سحب الكل") {
      message.delete(4000)
  if(!message.channel.guild) return;
  if (!message.member.hasPermission("MOVE_MEMBERS")) return;
@@ -859,7 +858,7 @@ client.on('message',async message => {
 
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith(prefix + "Kt")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
